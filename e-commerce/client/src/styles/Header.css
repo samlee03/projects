@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    font-family: 'Libre Caslon Text';
+}
+.light-brown {
+    background-color: #5D5350;
+}
+.dark-brown {
+    background-color: #453D3A;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 88px;
+    width: 100%;
+    padding: 0 3.75rem;
+}
+
+.subheader {
+    height: 50px;
+    width: 100%;
+}
+
+.main-component-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 11.5rem;
+}
+
+.search-field{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;  
+    border-radius: 5px;
+    width: 66vw;
+}
+.search-field::selection {
+    background-color: #453D3A;
+    color: white;
+}
+.other-navigations-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.subheader-nav-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.subheader {
+    padding: 0 3.75rem;
+    display: flex;
+    align-items: center;
+}
+.subheader-navigations-links{
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+}

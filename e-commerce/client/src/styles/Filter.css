@@ -1,0 +1,23 @@
+.Filter{
+    background-color: #F6F6F6;
+    width: 225px;
+    height: 100vh;
+    padding: 24px 0 0 24px;
+}
+
+.filter-title{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.subcategory {
+    margin: 24px 0 0 0;
+}
+
+.subcategory > div {
+    margin: 12px 0;
+}
+label {
+    padding: 0 10px;
+    color: #606060;
+}
