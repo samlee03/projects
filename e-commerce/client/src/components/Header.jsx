@@ -1,11 +1,15 @@
 import React from 'react'
 import "../styles/Header.css"
+import Logo from "../assets/Header/Logo.png"
+import ShoppingCartIcon from "../assets/Header/ShoppingCartIcon.png"
+import SideBarToggle from "../assets/Header/SideBarToggle.png"
 function Header() {
   return (
     <div className='header-container'>
         <div className='header light-brown'>
             <div className='main-component-wrapper'>
-                <img src='https://placehold.co/42x42'/>
+                {/* <img src='https://placehold.co/42x42'/> */}
+                <img src={Logo}/>
                 <input 
                 type='text'
                 placeholder='Search for your item here..'
@@ -13,12 +17,14 @@ function Header() {
                 />
             </div>
             <div className='other-navigations-wrapper'>
-                <img src='https://placehold.co/52x52'/>
+                {/* <img src='https://placehold.co/52x52'/> */}
+                <img src={ShoppingCartIcon}/>
             </div>
         </div>
         <div className='subheader dark-brown'>
             <div className='subheader-nav-wrapper'>
-                <img src='https://placeholder.co/31x31'/>
+                {/* <img src='https://placeholder.co/31x31'/> */}
+                <img src={SideBarToggle}/>
                 <h3 className='subheader-navigations-links'>Top Sellers</h3>
                 <h3 className='subheader-navigations-links'>Category #1</h3>
                 <h3 className='subheader-navigations-links'>Category #2</h3>
