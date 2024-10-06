@@ -9,6 +9,8 @@
 
 .shopping-cart-item-icon {
     padding: 4px;
+    height: 62px;
+    width: 60px;
 }
 .cart-item-description{
     display: flex;

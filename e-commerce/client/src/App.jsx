@@ -7,21 +7,46 @@ import SidebarCart from './components/SidebarCart'
 import ItemPage from './components/ItemPage'
 
 function App() {
+  const [isCartHovered, setIsCartHovered] = useState(false);
+  const [filterOn, setFilterOn] = useState(false);
+  const [cartList, setCartList] = useState([]);
+  
+  const handleCartHover = (hovered) => {
+    setIsCartHovered(hovered);
+  }
+  const handleToggleFilter = () => {
+    setFilterOn(prev => !prev);
+  }
+
+  const handleAddToCart = (itemName, itemImg) => {
+    setCartList(prev => [...prev, [itemName, itemImg]]);
+    console.log(cartList);
+  }
   return (
     <>
       <div className='App'>
-        <Header/>
-        {/* <ItemPage/> */}
+        <Header onCartHover={handleCartHover} toggleFilter={handleToggleFilter}/>
+        {isCartHovered ?
+          (
+          <div className='cart-hover'>
+            <SidebarCart cartList={cartList}/>
+          </div>)
+          :
+          <></>
+        }
         <div className='page-layout'>
           <div>
-            <Filter/>
+            {
+              filterOn?
+              (
+                <Filter/>
+              )
+              : <></>                
+            }
           </div>
           <div>
-            <ShoppingPage/>
+            <ShoppingPage addToCart={handleAddToCart}/>
           </div>
-          {/* <div className='cart-hover'>
-            <SidebarCart/>
-          </div> */}
         </div>
       </div>
     </>

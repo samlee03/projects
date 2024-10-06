@@ -9,30 +9,30 @@ function Filter() {
                 <h3>Brands</h3>
                 <div>
                     <input id='Brand#1' type='checkbox' name='test'/>
-                    <label for='Brand#1'>Brand #1</label>
+                    <label htmlFor='Brand#1'>Brand #1</label>
                 </div>
                 <div>
                     <input id='Brand2' type='checkbox' name='test'/>
-                    <label for='Brand2'>Brand #2</label>
+                    <label htmlFor='Brand2'>Brand #2</label>
                 </div>
                 <div>
                     <input id='Brand3' type='checkbox' name='test'/>
-                    <label for='Brand3'>Brand #3</label>
+                    <label htmlFor='Brand3'>Brand #3</label>
                 </div>
             </div>
             <div className='subcategory'>
                 <h3>Condition</h3>
                 <div>
                     <input id='new#1' type='checkbox' name='test'/>
-                    <label for='new#1'>New</label>
+                    <label htmlFor='new#1'>New</label>
                 </div>
                 <div>
                     <input id='renew' type='checkbox' name='test'/>
-                    <label for='renew'>Used</label>
+                    <label htmlFor='renew'>Used</label>
                 </div>
                 <div>
                     <input id='used' type='checkbox' name='test'/>
-                    <label for='used'>Renewed</label>
+                    <label htmlFor='used'>Renewed</label>
                 </div>
             </div>
         </div>

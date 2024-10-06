@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/Card.css"
 import AddToCart from "../assets/Card/AddToCart.png"
-function Card({itemName, itemImg}) {
+function Card({itemName, itemImg, addToCart}) {
   return (
     <div className='card'>
       <div>
@@ -12,7 +12,9 @@ function Card({itemName, itemImg}) {
       </div>
       <div className='card-btns'>
         {/* <img src='https://placeholder.co/34x34'/> */}
-        <img src={AddToCart}/>
+        <img src={AddToCart}
+          onClick={() => addToCart(itemName, itemImg)}
+        />
       </div>
     </div>
   )

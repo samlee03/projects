@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
 .page-layout {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     /* position: relative; */
 }
 
 .cart-hover {
-    position: absolute;
+    position: fixed;
+    height: 100%;
     right: 0;
 }

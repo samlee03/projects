@@ -1,11 +1,11 @@
 import React from 'react'
 import "../styles/ShoppingCartItem.css"
-function ShoppingCartItem() {
+function ShoppingCartItem({itemName, itemImg}) {
   return (
     <div className='ShoppingCartItem'>
-        <img className='shopping-cart-item-icon' src='https://placeholder.co/60x62' />
+        <img className='shopping-cart-item-icon' src={itemImg} />
         <div className='cart-item-description'>
-            <p>Item Name</p>
+            <p>{itemName}</p>
             <div className='quantity-container'>
                 <p className='quantity'>Qty: 1</p> 
                 <div className='quantity-btns'>
