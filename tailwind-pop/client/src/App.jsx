@@ -33,22 +33,15 @@ function App() {
           // const newBoxes = [{posX: X, posY: Y}];
           return newBoxes;
         });
-        const deletionInterval = setTimeout(() => {
-          setBoxes(prev => {
-            const newBoxes = prev.slice(1);
-            return newBoxes;
-          })
-        }, 300)
+        // const deletionInterval = setTimeout(() => {
+        //   setBoxes(prev => {
+        //     const newBoxes = prev.slice(1);
+        //     return newBoxes;
+        //   })
+        // }, 3000)
         return () => clearInterval(interval);
         // Pop up boxes
       }, 1000)
-
-      const deletionInterval = setTimeout(() => {
-        setBoxes(prev => {
-          const newBoxes = prev.slice(1);
-          return newBoxes;
-        })
-      }, 975)
       return () => clearInterval(interval);
     }
   }, [isRunning])
